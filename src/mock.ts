@@ -3,24 +3,25 @@
  * Tänk på att inte ändra variabelnamnen nedan utan bara det som tilldelas.
  */
 
-import { Entity } from './app';
+import  { Game }  from './app';
 
 // Sökvägen till resursen i ditt API:
-export const pathToResource = '/api/resource';
+export const pathToResource = '/games';
 
 // Beskriv hur en entitet kan se ut:
-export const mockedEntityDefault: Entity = {
-  id: '1',
-  // string: 'new entity',
-  // number: 100,
-  // date: new Date('2022-01-01'),
-  // list: [1, 2, 3],
+export const mockedEntityDefault: Game = {
+  id: 1,
+  title: 'The Legend of Zelda',
+  developer: 'Nintendo',
+  releaseYear: 1986,
+  genre: 'Adventure'
 };
+
 // Ge ett annat exempel på hur en entitet kan se ut:
-export const mockedEntityUpdated: Entity = {
-  id: '2',
-  // string: 'updated entity',
-  // number: 149,
-  // date: new Date('2022-12-31'),
-  // list: [4, 4, 4],
+export const mockedEntityUpdated: Game = {
+  id: 2,
+  title: 'Super Mario Bros',
+  developer: 'Nintendo',
+  releaseYear: 1985,
+  genre: 'Platform'
 };
